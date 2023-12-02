@@ -42,25 +42,8 @@
         aspect-ratio: 1;
         object-fit: cover;
         border-radius: 50%;
-        transform:translate(var(--_x,0), var(--_y,0));
         cursor: pointer;
         z-index: 0;
-        transition: .3s, z-index 0s .3s;
-      }
-      .wallets img:hover{
-        --_1: 1;
-        z-index: 1;
-        transition: transform .2s, clip-path .3s .2s, z-index 0s;
-      }
-      .wallets:hover img{
-        transform: translate(0,0);
-      }
-      .wallets > img:nth-child(1){
-        clip-path: polygon(50% 50%,calc(50%*var(--_1,0))
-        calc(120%*var(--_1,0)),0 calc(100%*var(--_1,0)),0
-        0,100% 0,100% calc(100%*var(--_1,0)),
-        calc(100% - 50%*var(--_1,0)) calc(120%*var(--_1,0)));
-        --_y: calc(-1*var(--g));
       }
       body{
         background: black;
@@ -113,15 +96,15 @@
       }
     </style>
   <body style="background: black;">
-  <div class="navbar navbar-dark bg-dark shadow-sm">
+  <div>
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <ul class="listd text-white" style="text-align: right;">
-          <a style="margin-right: 800px; padding-top: 90px; color: white; font-weight: bold;" href="">SAMDOTOLA</a>
+          <a style="margin-right: 700px; padding-top: 90px; color: white; font-weight: bold;" href="">SAMDOTOLA</a>
           <a style="margin-right: 17px; padding-top: 90px; color: white; font-weight: bold;" href="">Home</a>
           <a style="margin-right: 17px; color: #0ef6cc; font-weight: bold;" href="https://github.com/samdotola">Projects</a>
           <a style="margin-right: 17px; color: #0ef6cc; font-weight: bold;" href="">View CV</a>
-          <a style="margin-right: 100px; color: #0ef6cc; font-weight: bold;" href="https://twitter.com/samdotola">Contact Me</a>
+          <a style="margin-right: 100px; color: #0ef6cc; font-weight: bold;" href="https://twitter.com/samdotola">Contact</a>
         </ul>
       </a>
       
@@ -134,7 +117,6 @@
   
   <div class="body1">
     <div class="wallets">
-      <img src="par.png">
       <img src="cal.jpg">
     </div>
     <div class="e">
