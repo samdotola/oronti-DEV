@@ -22,28 +22,21 @@
         user-select: none;
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 400px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
       .wallets{
-        --g:8px; /*gap*/
-        --s:400px; /*space*/
-
-        display: grid;
         border-radius: 50%;
         margin-top: 50px;
         padding-left: 50px;
       }
       .wallets > img{
-        grid-area: 1/1;
         width: 400px;
-        aspect-ratio: 1;
         object-fit: cover;
         border-radius: 50%;
         cursor: pointer;
-        z-index: 0;
       }
       body{
         background: black;
@@ -98,13 +91,12 @@
   <body style="background: black;">
   <div>
     <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
+      <a href="#" class="navbar-brand ">
         <ul class="listd text-white" style="text-align: right;">
-          <a style="margin-right: 700px; padding-top: 90px; color: white; font-weight: bold;" href="">SAMDOTOLA</a>
-          <a style="margin-right: 17px; padding-top: 90px; color: white; font-weight: bold;" href="">Home</a>
-          <a style="margin-right: 17px; color: #0ef6cc; font-weight: bold;" href="https://github.com/samdotola">Projects</a>
-          <a style="margin-right: 17px; color: #0ef6cc; font-weight: bold;" href="">View CV</a>
-          <a style="margin-right: 100px; color: #0ef6cc; font-weight: bold;" href="https://twitter.com/samdotola">Contact</a>
+          <a style="margin-right: 20px; padding-top: 0px; color: white; font-weight: bold;" href="">Home</a>
+          <a style="margin-right: 20px; color: #0ef6cc; font-weight: bold;" href="https://github.com/samdotola">Projects</a>
+          <a style="margin-right: 20px; color: #0ef6cc; font-weight: bold;" href="">View CV</a>
+          <a style="margin-right: 60px; color: #0ef6cc; font-weight: bold;" href="https://twitter.com/samdotola">Contact</a>
         </ul>
       </a>
       
@@ -115,7 +107,7 @@
 <body>
   
   
-  <div class="body1">
+  <div class="body1"  style="padding-top: 70px;">
     <div class="wallets">
       <img src="cal.jpg">
     </div>
